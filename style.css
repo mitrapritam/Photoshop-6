@@ -1,0 +1,79 @@
+/* Common Css Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+    font-family: "PT Sans", sans-serif;
+}
+.container {
+    width: 1110px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Common Css End */
+
+/* =========== Nav Section Css Start =========== */
+#header nav .row {
+    justify-content: space-between;
+    align-items: center;
+}
+#header nav ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    text-transform: uppercase;
+    padding: 5px 28px;
+    line-height: 2;
+    display: inline-block;
+    position: relative;
+}
+#header nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #353535;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+#header nav ul li a:hover::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+/* =========== Nav Section Css End =========== */
+
+/* =========== Footer Section Css Start =========== */
+#footer {
+    background: #575757 url("./../img/footer_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#footer .footer_widget {
+    width: calc(100% / 3);
+}
+#footer .widget-3 {
+    text-align: right;
+}
+#footer .widget-6 .row {
+    justify-content: flex-end;
+}
+/* =========== Footer Section Css End =========== 
